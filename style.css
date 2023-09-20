@@ -43,3 +43,31 @@ body * {
   line-height: 24px; /* 150% */
   margin-top: 8px;
 }
+
+/* links */
+ul {
+  list-style: none;
+  display: flex;  /* Faz com que os elementos dentro da caixa ul se ajustem um ao lado do outro. */
+  flex-direction: column;
+  gap: 16px;  /* Espaços entre os elementos. */
+}
+
+ul li a {
+  /* border: 1px solid red; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+}
