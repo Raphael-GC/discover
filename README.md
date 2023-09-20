@@ -1,5 +1,6 @@
 <h1 align="center"> 
-  :mag: Discover
+  <img alt="Discover logo" src="./assets/logo-discover.svg">
+  <!-- :mag: Discover -->
 </h1>
 
 > A project called DevLinks. A static website very similar to Linktree and others like this one. This project belongs to Rockseat and was made in the program called Discover, which is aimed at audiences new to programming.
