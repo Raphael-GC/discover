@@ -12,6 +12,7 @@
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moon-stars.svg); 
 }
 
 .light {
@@ -21,18 +22,10 @@
   --surface-color: rgba(0, 0, 0, 0.1);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg); 
 }
 
 body {
-  /*
-  background-image: url(./assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  */
-  
-  /*backgound: color image repeat positon/size */
-
   background:  var(--bg-url) top center/cover;
 }
 
@@ -45,9 +38,9 @@ body * {
   width: 360px;
   margin: 56px auto 0px; 
   padding: 0 24px;
-
 }
 
+/* Profile */
 #profile {
   text-align: center;
   padding: 24px;
@@ -64,7 +57,45 @@ body * {
   margin-top: 8px;
 }
 
-/* links */
+/* Switch */
+#switch {
+  position: relative; /*delimita a area do position absolute*/ 
+  width: 64px;
+
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute; /*habilita a superposição de elementos.*/
+  top: 50%; /*Alinhamento vertical no position absolute*/
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%); /*Alinhamento vertical no position absolute*/
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+/* Main Links */
 ul {
   list-style: none;
   display: flex;  /* Faz com que os elementos dentro da caixa ul se ajustem um ao lado do outro. */
@@ -75,8 +106,6 @@ ul {
 }
 
 ul li a {
-  /* border: 1px solid red; */
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,8 +125,8 @@ ul li a {
   transition: background 0.2s;
 }
 
-/* pseudo-selector */
-ul li a:hover {
+/* Social Links */
+ul li a:hover { /* hover -> pseudo-selector */
   background: var(--surface-color-hover)
   border: 1.5px solid var(--text-color);
 }
@@ -121,7 +150,6 @@ ul li a:hover {
 
 #social-links a:hover {
   background: var(--highlight-color);
-  
 }
 
 /* Sofri pra entender porque meu footer não estava pegando a estilização. E depois descobri que ele não necessita do # antes do nome do seletor ;P */
