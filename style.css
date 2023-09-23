@@ -127,7 +127,7 @@ ul li a {
 
 /* Social Links */
 ul li a:hover { /* hover -> pseudo-selector */
-  background: var(--surface-color-hover)
+  background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
 
