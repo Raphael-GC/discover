@@ -1,4 +1,5 @@
-*{ /*zerando as definições pre setadas pelo navegador */
+* {
+  /*zerando as definições pre setadas pelo navegador */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,7 +13,7 @@
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url(./assets/moon-stars.svg); 
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 .light {
@@ -22,23 +23,23 @@
   --surface-color: rgba(0, 0, 0, 0.1);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(./assets/sun.svg); 
+  --switch-bg-url: url(./assets/sun.svg);
 }
 
 body {
-  background:  var(--bg-url) top center/cover;
-  height: 100vh
+  background: var(--bg-url) top center/cover;
+  height: 100vh;
 }
 
 body * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 
 #container {
   width: 100%;
   max-width: 588px;
-  margin: 56px auto 0px; 
+  margin: 56px auto 0px;
   padding: 0 24px;
 }
 
@@ -61,7 +62,7 @@ body * {
 
 /* Switch */
 #switch {
-  position: relative; /*delimita a area do position absolute*/ 
+  position: relative; /*delimita a area do position absolute*/
   width: 64px;
 
   margin: 4px auto;
@@ -79,11 +80,18 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%); /*Alinhamento vertical no position absolute*/
+
+  animation: slide-back 0.2s;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  /*right: 0;
+  left: initial;*/
+  animation: slide-in 0.4s forwards; /* Forwards é a propriedade que mantem o estado final da minha animação ao invés de resetá-lo para o estado inicial como o padrão. */
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -100,9 +108,9 @@ body * {
 /* Main Links */
 ul {
   list-style: none;
-  display: flex;  /* Faz com que os elementos dentro da caixa ul se ajustem um ao lado do outro. */
+  display: flex; /* Faz com que os elementos dentro da caixa ul se ajustem um ao lado do outro. */
   flex-direction: column;
-  gap: 16px;  /* Espaços entre os elementos. */
+  gap: 16px; /* Espaços entre os elementos. */
 
   padding: 24px 0;
 }
@@ -128,9 +136,11 @@ ul li a {
 }
 
 /* Social Links */
-ul li a:hover { /* hover -> pseudo-selector */
+ul li a:hover {
+  /* hover -> pseudo-selector */
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
+  outline: 5px solid var(--highlight-color);
 }
 
 #social-links {
@@ -155,13 +165,13 @@ ul li a:hover { /* hover -> pseudo-selector */
 }
 
 /* Sofri pra entender porque meu footer não estava pegando a estilização. E depois descobri que ele não necessita do # antes do nome do seletor ;P */
-footer {  
+footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
 }
 
-/* Media Queries - Essa em especifico só funciona de se houver a meta tag de viewport no html*/  
+/* Media Queries - Essa em especifico só funciona de se houver a meta tag de viewport no html*/
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
@@ -169,5 +179,24 @@ footer {
 
   .light {
     --bg-url: url(./assets/bg-light.jpg);
+  }
+}
+
+/* Animation */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
