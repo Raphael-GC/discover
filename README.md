@@ -3,9 +3,11 @@
   <!-- :mag: Discover -->
 </h1>
 
-> A project called DevLinks. A static website very similar to Linktree and others like this one. This project belongs to Rockseat and was made in the program called Discover, which is aimed at audiences new to programming.
+> A project called DevLinks. A static website very similar to Linktree and others like this one. This project belongs to Rockseat and was made in the program called Discover, which is aimed at audiences new to programming. Check out the <a href="https://github.com/maykbrito/devlinks">original project</a>.
 
-<h4 align="center">Progress<br><progress alt="Projeto 50% concluído" value="50" max="100"></progress></h4>
+<img alt="Discover cover" src="./assets/cover.png">
+
+<!-- <h4 align="center">Progress<br><progress alt="Projeto 50% concluído" value="50" max="100"></progress></h4> -->
 
 <p align="center">
     <a href="https://github.com/Raphael-GC/discover/commits/main">
