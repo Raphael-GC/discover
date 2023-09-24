@@ -1,5 +1,5 @@
 <h1 align="center"> 
-  <img alt="Discover logo" src="./assets/logo-discover.svg" width="70%">
+  <img alt="Discover logo" src="./assets/logo-discover.svg" width="40%">
   <!-- :mag: Discover -->
 </h1>
 
@@ -35,7 +35,9 @@
 
 ## 💻 Project
 
- A project called DevLinks. A static website very similar to Linktree and others like this one. This project belongs to Rockseat and was made in the program called Discover, which is aimed at audiences new to programming. Check out the <a href="https://github.com/maykbrito/devlinks">original project</a>.
+ A project called DevLinks. A static website very similar to Linktree and others like this one. This project belongs to Rockseat and was made in the program called Discover, which is aimed at audiences new to programming. Check out the <a href="https://github.com/maykbrito/devlinks">original project</a>. 
+
+ Check out <a href="https://raphael-gc.github.io/discover/">**my version**</a> of this project on your browser (mobile or desktop).
 
 ## 🔖 Layout
 
