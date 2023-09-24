@@ -1,5 +1,5 @@
 <h1 align="center"> 
-  <img alt="Discover logo" src="./assets/logo-discover.svg" width="130%">
+  <img alt="Discover logo" src="./assets/logo-discover.svg" width="70%">
   <!-- :mag: Discover -->
 </h1>
 
@@ -43,5 +43,6 @@
 Plus, you can download the files from this project on <a href="https://efficient-sloth-d85.notion.site/Materiais-complementares-d7841615addc4269ba5c5bba12a6edbe">**Notion**</a>.
 
 ---
-
-Grow like a 🌳!
+<p align="center">
+  Grow like a 🌳!  
+</p>   
