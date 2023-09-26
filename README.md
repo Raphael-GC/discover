@@ -4,16 +4,11 @@
 </h1>
 
 <p align="center">
-  <a href="#-tecnologias">Techs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;
+  <a href="#-techs">Techs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-learning">Learning</a>&nbsp;&nbsp;&nbsp;
 </p>
-
-<p align="center">
-    <a href="https://github.com/Raphael-GC/discover/commits/main">
-        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Raphael-GC/discover">
-    </a>
-</p>  
 
 <p align="center">
   <img alt="Discover cover" src="./assets/cover.png" width="80%">
@@ -43,6 +38,10 @@
 
  You can view the project layout through this [LINK](https://www.figma.com/community/file/1187422022288947321). You must have an account on [Figma](https://figma.com) to access it.
 Plus, you can download the files from this project on <a href="https://efficient-sloth-d85.notion.site/Materiais-complementares-d7841615addc4269ba5c5bba12a6edbe">**Notion**</a>.
+
+## 🔎 Learning
+
+ Do you want to know what I learned from this project? Check out my notes repo called [Skylab](https://github.com/Raphael-GC/Skylab_JS#readme).
 
 ---
 <p align="center">
