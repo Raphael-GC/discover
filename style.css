@@ -54,6 +54,11 @@ body * {
   margin: auto;
 }
 
+#profile img:hover {
+  border-radius: 50%;
+  outline: 6px solid var(--highlight-color);
+}
+
 #profile p {
   font-weight: 500;
   line-height: 24px; /* 150% */
@@ -135,7 +140,6 @@ ul li a {
   transition: background 0.2s;
 }
 
-/* Social Links */
 ul li a:hover {
   /* hover -> pseudo-selector */
   background: var(--surface-color-hover);
@@ -143,6 +147,7 @@ ul li a:hover {
   outline: 5px solid var(--highlight-color);
 }
 
+/* Social Links */
 #social-links {
   display: flex; /* Aqui não é redundancia aplicar display flex visto que os elementos já estavam lado a lado, pois precisávamos escrevê-lo para habilitar o atributo gap (espaçamento entre os elementos). */
   justify-content: center;
