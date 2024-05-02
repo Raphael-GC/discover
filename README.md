@@ -3,7 +3,7 @@
   <!-- :mag: Discover -->
 </h1>
 
-> A project called DevLinks. A static website very similar to Linktree and others like this one. This project belongs to Rockseat and was made in the program called Discover, which is aimed at audiences new to programming. Check out the <a href="https://github.com/maykbrito/devlinks">original project</a>.
+> DevLinks is a static website very similar to Linktree and others like this one. This project belongs to Rockseat and was made in the program called Discover, which is aimed at audiences new to programming. Check out the <a href="https://github.com/maykbrito/devlinks">original project</a>.
 
 ---
 
